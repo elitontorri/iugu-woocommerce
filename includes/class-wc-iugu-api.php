@@ -442,6 +442,7 @@ class WC_Iugu_API {
 					'number'   => $order->billing_number,
 					'city'     => $order->billing_city,
 					'state'    => $order->billing_state,
+					'district' => $order->billing_neighborhood,
 					'country'  => isset( WC()->countries->countries[ $order->billing_country ] ) ? WC()->countries->countries[ $order->billing_country ] : $order->billing_country,
 					'zip_code' => $this->only_numbers( $order->billing_postcode )
 				)
